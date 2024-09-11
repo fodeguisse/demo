@@ -8,6 +8,7 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 
+		System.setProperty("spring.profiles.default", "reinit,h2"); // activer par défaut au démarrage
 		SpringApplication.run(DemoApplication.class, args);
 		System.out.println("http://localhost:8181/demo");
 	}
